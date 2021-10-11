@@ -1,8 +1,12 @@
 import React from "react"
 
+import Nav from "components/Nav"
+import ProjectList from "components/ProjectList"
+
 const App = () => (
   <div>
-    <h1>Hello World!</h1>
+    <Nav />
+    <ProjectList />
   </div>
 )
 
