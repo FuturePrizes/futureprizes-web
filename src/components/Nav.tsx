@@ -3,7 +3,7 @@ import React from "react"
 import { useEtherBalance, useEthers } from '@usedapp/core'
 import { formatEther } from '@ethersproject/units'
 
-import { GITHUB } from 'icons';
+import { GITHUB, ETHERSCAN } from 'icons';
 
 const Nav = () => {
   const { activateBrowserWallet, deactivate, account } = useEthers()
@@ -23,7 +23,10 @@ const Nav = () => {
         <h1>Future Prizes</h1>
         <h2 className='nav-subtitle'>Hindsight is 20/20.</h2>
         <a href="https://github.com/FuturePrizes" target="_blank">
-          <img className="github" src={GITHUB} />
+          <img src={GITHUB} />
+        </a>
+        <a href="https://rinkeby.etherscan.io/address/0x51998c89f2f210a996e48f4bce16e0eac9602541#code" target="_blank">
+          <img src={ETHERSCAN} />
         </a>
       </div>
     </nav>
