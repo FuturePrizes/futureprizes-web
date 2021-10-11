@@ -53,3 +53,18 @@ nav {
 .project-list input, .project-list button {
     font-size: 1rem;
 }
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-subtitle {
+    font-weight: 400;
+    font-style: oblique;
+}
+
+.github {
+    cursor: pointer;
+}

@@ -3,6 +3,8 @@ import React from "react"
 import { useEtherBalance, useEthers } from '@usedapp/core'
 import { formatEther } from '@ethersproject/units'
 
+import { GITHUB } from 'icons';
+
 const Nav = () => {
   const { activateBrowserWallet, deactivate, account } = useEthers()
   const etherBalance = useEtherBalance(account)
@@ -17,9 +19,13 @@ const Nav = () => {
           : <button className="login-button" onClick={() => activateBrowserWallet()}>Connect</button>
         }
       </div>
-      <h1 className='not-sidebar'>
-        Future Prizes
-      </h1>
+      <div className='not-sidebar nav-title'>
+        <h1>Future Prizes</h1>
+        <h2 className='nav-subtitle'>Hindsight is 20/20.</h2>
+        <a href="https://github.com/FuturePrizes" target="_blank">
+          <img className="github" src={GITHUB} />
+        </a>
+      </div>
     </nav>
 
   )
